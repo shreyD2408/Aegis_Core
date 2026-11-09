@@ -44,7 +44,8 @@ Aegis Core is structured into three primary electrical and computational domains
 
    3D Model:
 
-    <img width="900" height="675" alt="image" src="https://github.com/user-attachments/assets/41cfcbc3-bc01-4a1e-a4a4-481c7179d8cd" />
+<img width="762" height="636" alt="image" src="https://github.com/user-attachments/assets/3a36af24-6eda-4ba8-b78d-382a8a8dde8f" />
+
 
 
 # Wiring & Interconnect Diagram
