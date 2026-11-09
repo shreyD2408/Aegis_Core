@@ -33,12 +33,16 @@ Aegis Core is structured into three primary electrical and computational domains
    # Visuals & Layouts
 
    Schemaitc:
+
    <img width="1392" height="891" alt="image" src="https://github.com/user-attachments/assets/8b5833c2-1684-4783-a9b0-4fdb03ee47af" />
 
    Board Layout:
+
    <img width="813" height="637" alt="image" src="https://github.com/user-attachments/assets/d8bc6f1d-df69-4ba8-9adc-b2d72eb7c6d2" />
 
+
    3D Model:
-   <img width="900" height="675" alt="image" src="https://github.com/user-attachments/assets/41cfcbc3-bc01-4a1e-a4a4-481c7179d8cd" />
+
+    <img width="900" height="675" alt="image" src="https://github.com/user-attachments/assets/41cfcbc3-bc01-4a1e-a4a4-481c7179d8cd" />
 
 
