@@ -11,7 +11,7 @@ I designed Aegis Core to solve these challenges head-on. By integrating everythi
 Aegis Core is structured into three primary electrical and computational domains to ensure high performance and zero brownouts under heavy mechanical load.
 
 1. Power Regulation & Destribution
-  Input Stage: Power is connected through an XT30 connector (+BATT) directly connected to a bulk filtering electrolytic capacitor where the severe    inductive current transients that occur when the flywheel motors and servos snap into action are absorbed.
+    Input Stage: Power is connected through an XT30 connector (+BATT) directly connected to a bulk filtering electrolytic capacitor where the severe    inductive current transients that occur when the flywheel motors and servos snap into action are absorbed.
   
   Buck Regulation: A high-efficiency, 500kHz synchronous buck converter reduces the battery voltage range of approximately 7.4V nominal/8.4V max to   a strong and clean 5.0V system rail. Input voltage allows for up to 8S batteries to be connected, although it is not    recommend. Input voltage ranges from 6-30V. The input ceramic decoupling capacitors, output bypass capacitors, bootstrap capacitor and soft-start capacitor are carefully chosen low-ESR surface-mount devices to ensure loop stability. 
 
@@ -30,11 +30,12 @@ Aegis Core is structured into three primary electrical and computational domains
    Audio & Input: An integrated piezo buzzer emits audible telemetry signals (startup melodies, arming tones and firing clicks), and the tactile
    push buttons allow the user with BOOTSEL and RESET buttons.
 
-   # Visuals & Layouts
+# Visuals & Layouts
 
    Schemaitc:
 
    <img width="1392" height="891" alt="image" src="https://github.com/user-attachments/assets/8b5833c2-1684-4783-a9b0-4fdb03ee47af" />
+
 
    Board Layout:
 
@@ -44,5 +45,18 @@ Aegis Core is structured into three primary electrical and computational domains
    3D Model:
 
     <img width="900" height="675" alt="image" src="https://github.com/user-attachments/assets/41cfcbc3-bc01-4a1e-a4a4-481c7179d8cd" />
+
+
+# Wiring & Interconnect Diagram
+
+Because Aegis Core concentrates peripheral connections onto organized onboard headers, external hand-wiring is kept to an absolute minimum:
+
+- XT30 Connector: Main 2S Li-ion battery input
+- Flywheel Output Terminals: Screw terminals connected to the drain pins of the A03400A MOSFET low-side drivers.
+- Pan Servo Header: 3-pin header (signal to RP2350 GPIO 0, 5V, GND)
+- Tilt Servo Header: 3-pin header (signal to RP2350 GPIO 1, 5V, GND)
+- Reload Servo Header: 3 pin header (signal to RP2350 GPIO 2, 5V, GND)
+- RGB LED Strip Input: 01x04 Screw Terminal (GPIO 26, 27, 28, 5V). Built for common anode strips.
+   
 
 
